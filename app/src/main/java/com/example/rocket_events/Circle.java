@@ -1,11 +1,18 @@
 package com.example.rocket_events;
 
 public class Circle extends Shape {
-    int radius;
+    private int radius;
 
     public Circle(int x, int y, int radius) {
-        this.x = x;
-        this.y = y;
+        super(x, y);
+        this.radius = radius;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
         this.radius = radius;
     }
 }
